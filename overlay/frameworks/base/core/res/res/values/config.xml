@@ -240,4 +240,8 @@
             2 - Power off (with confirmation)
     -->
     <integer name="config_longPressOnPowerBehavior">2</integer>
+
+    <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
+         autodetected from the Configuration. -->
+    <bool name="config_showNavigationBar">true</bool>
 </resources>
