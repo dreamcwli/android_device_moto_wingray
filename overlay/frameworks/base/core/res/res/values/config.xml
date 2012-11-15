@@ -240,4 +240,7 @@
             2 - Power off (with confirmation)
     -->
     <integer name="config_longPressOnPowerBehavior">2</integer>
+
+    <!-- Separate software navigation bar required on this device. -->             
+    <bool name="config_showNavigationBar">true</bool>
 </resources>
