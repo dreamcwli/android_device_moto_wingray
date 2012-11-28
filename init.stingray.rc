@@ -18,6 +18,9 @@ on init
     symlink /storage/emulated/legacy /storage/sdcard0
     symlink /mnt/shell/emulated/0 /storage/emulated/legacy
 
+    mkdir /mnt/usbdrive 0000 system system
+    symlink /mnt/usbdrive /usbdrive
+
     mkdir /pds 0777 system system
 
 on fs
