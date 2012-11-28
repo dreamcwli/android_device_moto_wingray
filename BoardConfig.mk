@@ -36,7 +36,11 @@ SMALLER_FONT_FOOTPRINT := true
 
 # inherit from the proprietary version
 # needed for BP-flashing updater extensions
+ifneq ($(filter trygon trygon_l10n calgon full_stingray tyranid stingray my_stingray,$(TARGET_PRODUCT)),)
 -include vendor/moto/stingray/BoardConfigVendor.mk
+else
+-include vendor/moto/wingray/BoardConfigVendor.mk
+endif
 
 TARGET_BOARD_PLATFORM := tegra
 
