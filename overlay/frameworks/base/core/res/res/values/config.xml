@@ -224,4 +224,10 @@
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">8</integer>
+
+    <!-- Whether charging light is supported by this device -->
+    <bool name="config_chargingLightSupported">true</bool>
+    <string name="config_chargingLightPath">/sys/class/gpio/gpio168/value</string>
+    <string name="config_chargingLightEnabledValue">0</string>
+    <string name="config_chargingLightDisabledValue">1</string>
 </resources>
