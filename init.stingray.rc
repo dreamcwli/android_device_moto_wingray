@@ -143,6 +143,10 @@ on boot
     chown radio radio /sys/bus/usb/devices/usb1/power/control
     chmod 660 /sys/bus/usb/devices/usb1/power/control
 
+# Charging LED
+    chown root system /sys/class/gpio/gpio168/value
+    chmod 664 /sys/class/gpio/gpio168/value
+
 # Power Management Settings
     #write /sys/devices/platform/ohci.0/usb2/2-3/power/level auto
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 216000

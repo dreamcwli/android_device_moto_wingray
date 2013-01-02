@@ -205,4 +205,9 @@
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">8</integer>
+
+    <bool name="config_chargingLightSupported">true</bool>
+    <string name="config_chargingLightFilename">/sys/class/gpio/gpio168/value</string>
+    <string name="config_chargingLightEnabledValue">0</string>
+    <string name="config_chargingLightDisabledValue">1</string>
 </resources>
