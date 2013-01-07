@@ -113,9 +113,7 @@ PRODUCT_COPY_FILES += \
     system/extras/bugmailer/send_bug:system/bin/send_bug
 
 # inherit from the non-open-source side, if present
-ifneq ($(filter trygon trygon_l10n calgon full_stingray tyranid stingray my_stingray,$(TARGET_PRODUCT)),)
-$(call inherit-product-if-exists, vendor/moto/stingray/stingray-vendor.mk)
-else
+ifneq ($(filter full_wingray my_wingray,$(TARGET_PRODUCT)),)
 $(call inherit-product-if-exists, vendor/moto/wingray/wingray-vendor.mk)
 endif
 
