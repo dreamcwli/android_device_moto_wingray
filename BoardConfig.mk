@@ -99,4 +99,4 @@ TARGET_BOARD_INFO_FILE ?= device/moto/wingray/board-info.txt
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/moto/wingray/bluetooth
 
-TARGET_OTA_ASSERT_DEVICE := stingray,stingray_cdma,wingray,umts_everest
+TARGET_OTA_ASSERT_DEVICE := stingray,umts_everest,wingray
