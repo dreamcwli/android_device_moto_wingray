@@ -23,6 +23,8 @@ on init
 
 on fs
     mount_all /fstab.stingray
+    mount ext4 /dev/block/platform/sdhci-tegra.3/by-name/SDC /data wait noatime nosuid nodev nomblk_io_submit noauto_da_alloc
+    mount ext4 /dev/block/platform/sdhci-tegra.3/by-name/sdcard /data wait noatime nosuid nodev nomblk_io_submit noauto_da_alloc
     setprop ro.crypto.fuse_sdcard true
 
 on post-fs-data
