@@ -46,7 +46,6 @@ TARGET_CPU_SMP := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a
 TARGET_CPU_VARIANT := generic
-ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_RECOVERY_FSTAB = device/moto/wingray/fstab.stingray
 TARGET_USERIMAGES_USE_EXT4 := true
