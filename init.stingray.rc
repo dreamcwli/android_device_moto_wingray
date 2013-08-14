@@ -201,7 +201,7 @@ service dhcpcd_eth0 /system/bin/dhcpcd -ABDKL
     oneshot
 
 # bluetooth
-service dhcpcd_bnep0 /system/bin/dhcpcd -ABKL
+service dhcpcd_bt-pan /system/bin/dhcpcd -ABKL
     disabled
     oneshot
 
@@ -218,7 +218,7 @@ service iprenew_eth0 /system/bin/dhcpcd -n
     oneshot
 
 # bluetooth
-service iprenew_bnep0 /system/bin/dhcpcd -n
+service iprenew_bt-pan /system/bin/dhcpcd -n
     disabled
     oneshot
 
