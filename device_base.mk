@@ -81,7 +81,6 @@ PRODUCT_PACKAGES := \
     audio.usb.default \
     audio_policy.stingray \
     librs_jni \
-    make_ext4fs \
     l2ping \
     hcitool \
     bttest \
