@@ -30,7 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
         ro.carrier=wifi-only
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/moto/wingray/device.mk)
@@ -39,4 +39,4 @@ $(call inherit-product, device/moto/wingray/device.mk)
 PRODUCT_NAME := full_wingray
 PRODUCT_DEVICE := wingray
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full Android on Wingray
+PRODUCT_MODEL := AOSP on Wingray
