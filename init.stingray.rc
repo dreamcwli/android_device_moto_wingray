@@ -6,6 +6,7 @@ on early-init
 on init
     # See storage config details at http://source.android.com/tech/storage/
     mkdir /mnt/shell/sdcard0 0700 shell shell
+    mkdir /storage/sdcard0 0000 root root
     mkdir /storage/sdcard1 0000 root root
 
     export EXTERNAL_STORAGE /storage/sdcard0
@@ -13,7 +14,6 @@ on init
     export SECONDARY_STORAGE /storage/sdcard1
 
     # Support legacy paths
-    symlink /mnt/shell/sdcard0/0 /storage/sdcard0
     symlink /storage/sdcard0 /sdcard
     symlink /storage/sdcard0 /mnt/sdcard
 
