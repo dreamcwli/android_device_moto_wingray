@@ -62,7 +62,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
 PRODUCT_COPY_FILES += \
-        device/moto/wingray/vold.fstab:system/etc/vold.fstab \
         device/moto/wingray/qtouch-touchscreen.idc:system/usr/idc/qtouch-touchscreen.idc \
         device/moto/wingray/cpcap-key.kl:system/usr/keylayout/cpcap-key.kl \
         device/moto/wingray/cpcap-key.kcm:system/usr/keychars/cpcap-key.kcm \
