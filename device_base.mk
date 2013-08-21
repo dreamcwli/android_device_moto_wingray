@@ -103,12 +103,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.nonsmartphone.conf:system/etc/bluetooth/main.conf \
 
-# inherit from the non-open-source side, if present
-ifneq ($(filter trygon trygon_l10n calgon full_stingray tyranid stingray,$(TARGET_PRODUCT)),)
-$(call inherit-product-if-exists, vendor/moto/stingray/stingray-vendor.mk)
-else
-$(call inherit-product-if-exists, vendor/moto/stingray/wingray-vendor.mk)
-endif
-
 WIFI_BAND := 802_11_ABG
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
