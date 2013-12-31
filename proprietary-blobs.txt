@@ -63,6 +63,7 @@
 /system/lib/hw/gralloc.tegra.so
 /system/lib/hw/hwcomposer.tegra.so
 /system/lib/libcgdrv.so
+/system/lib/libdrmdecrypt.so
 /system/lib/libmoto_ecnswrapper.so
 /system/lib/libnvddk_2d.so
 /system/lib/libnvddk_2d_v2.so
@@ -96,3 +97,7 @@
 /system/media/bootanimation.zip
 /system/vendor/etc/audio_effects.conf
 /system/vendor/firmware/fw_bcm4329_mfg.bin
+/system/vendor/lib/drm/libdrmwvmplugin.so
+/system/vendor/lib/libwvdrm_L3.so
+/system/vendor/lib/libwvm.so
+/system/vendor/lib/libWVStreamControlAPI_L3.so
